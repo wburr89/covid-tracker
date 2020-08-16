@@ -169,13 +169,17 @@ footer .row {
   margin-bottom: 0 !important;
 }
 
-.jumbotron {
+.vaccine-header {
   background: url("https://cdn.pixabay.com/photo/2020/03/16/16/29/virus-4937553__480.jpg")
     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 250px !important;
+  -webkit-box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.14);
+  -moz-box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.14);
+  box-shadow: 3px 3px 8px 2px rgba(0,0,0,0.3);
 }
 
 .py-5 {
@@ -191,5 +195,27 @@ footer .row {
 }
 
 .card p {
-  font-size: 0.7em;
+  font-size: 0.9em;
+}
+
+.card-header {
+  -webkit-box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.14);
+-moz-box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.14);
+box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.14);
+background-color: #a94e8b14
+}
+
+
+/* Covid Care */
+.care-header {
+  background: url("https://cdn.pixabay.com/photo/2020/03/16/16/29/virus-4937553__480.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 250px !important;
+  -webkit-box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.14);
+  -moz-box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.14);
+  box-shadow: 3px 3px 8px 2px rgba(0,0,0,0.3);
 }

@@ -1,3 +1,4 @@
+
 // Get vaccine data
 fetch("https://disease.sh/v3/covid-19/vaccine")
   .then((response) => response.json())
@@ -9,29 +10,43 @@ fetch("https://disease.sh/v3/covid-19/vaccine")
     console.log(mainData);
 
     let candidates = document.querySelector(".total-candidates");
-    candidates.innerHTML = `Total Candidates: ${data.totalCandidates}`;
+    candidates.innerHTML = `<h4 class="pb-5">Total Candidates: ${data.totalCandidates}</h4>`;
 
     // main data for cards
     let vacDiv = document.querySelector("#vaccine-data");
+
+
+
     vacDiv.innerHTML = mainData.map(
-      (element) => `
+      (element, index) => `
       
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">${element.candidate}</h4>
-          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-          <p class="card-text py-1 small show-read-more text-center">
-            ${element.details}
-          </p>
-          
-        </div>
-      </div>
-    </div>`
-    );
+        <div id="accordion">
+          <div class="card block mb-3">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#z${index}" aria-expanded="true" aria-controls="collapseOne">
+                  <strong>Vaccine Candidate:</strong> ${element.candidate}
+                </button>
+              </h5>
+            </div>
+
+            <div id="z${index}" class="collapse"  data-parent="#accordion">
+              <div class="card-body">
+                <p class="text-muted text-left"><strong>Funded by:</strong> ${element.funding[0]}</p>
+                <p class="mb-none text-muted text-left"><strong>Institution:</strong> ${element.institutions[0]}</p>
+                <p class="mb-none text-muted text-left"><strong>Sponsors:</strong> ${element.sponsors[0]}</p>
+                <p class="mb-none text-muted text-left"><strong>Trial phase:</strong> ${element.trialPhase}</p>
+                <p class="mb-none text-muted text-left"><strong>${element.details}</strong></p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>`
+    ).join('');
   });
 
 $(document).ready(function () {
-  var maxLength = 260;
+  let maxLength = 300;
   $(".show-read-more").each(function () {
     var myStr = $(this).text();
     if ($.trim(myStr).length > maxLength) {
@@ -49,3 +64,4 @@ $(document).ready(function () {
     $(this).remove();
   });
 });
+

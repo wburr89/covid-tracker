@@ -99,8 +99,8 @@ fetch("https://disease.sh/v3/covid-19/countries/usa")
       <h1>U.S Statistics</h1>
       <p class='text-muted'>Hover over the box for more info</p>
       <span class="text-muted"><strong>Last updated:</strong> ${new Date(
-        data.updated
-      )}</span>
+      data.updated
+    )}</span>
     </div>
     <div class="row container">
     <div class="col-sm-4">
@@ -114,20 +114,20 @@ fetch("https://disease.sh/v3/covid-19/countries/usa")
       </div>
       <div class="flip-card-back">
         <p><strong>U.S Population: ${data.population.toLocaleString(
-          "en"
-        )}</strong></p>
+      "en"
+    )}</strong></p>
         <p><strong>Total active cases:</strong> ${data.active.toLocaleString(
-          "en"
-        )}</p>
+      "en"
+    )}</p>
         <p><strong>Active cases per million:</strong> ${data.activePerOneMillion.toLocaleString(
-          "en"
-        )}</p>
+      "en"
+    )}</p>
         <p><strong>Total tests taken:</strong> ${data.tests.toLocaleString(
-          "en"
-        )}</p>
+      "en"
+    )}</p>
         <p><strong>Total tests per million:</strong> ${data.testsPerOneMillion.toLocaleString(
-          "en"
-        )}</p>
+      "en"
+    )}</p>
         <p>There is one case per ${data.oneCasePerPeople} people</p>
       </div>
     </div>
@@ -144,11 +144,11 @@ fetch("https://disease.sh/v3/covid-19/countries/usa")
       </div>
       <div class="flip-card-back">
         <p><strong>Deaths per one million: ${data.deathsPerOneMillion.toLocaleString(
-          "en"
-        )}
+      "en"
+    )}
         <p>There is one death per ${data.oneDeathPerPeople.toLocaleString(
-          "en"
-        )} people</p>
+      "en"
+    )} people</p>
         
       </div>
     </div>
@@ -165,14 +165,14 @@ fetch("https://disease.sh/v3/covid-19/countries/usa")
       </div>
       <div class="flip-card-back">
         <p><strong>Recovered per million:</strong> ${data.recoveredPerOneMillion.toLocaleString(
-          "en"
-        )}</p>
+      "en"
+    )}</p>
         <p><strong>Total critical cases:</strong> ${data.critical.toLocaleString(
-          "en"
-        )}</p>
+      "en"
+    )}</p>
         <p><strong>Critical cases per million:</strong> ${data.criticalPerOneMillion.toLocaleString(
-          "en"
-        )}</p>
+      "en"
+    )}</p>
       </div>
     </div>
   </div>
@@ -236,7 +236,7 @@ fetch("https://disease.sh/v3/covid-19/countries/usa")
               ticks: {
                 beginAtZero: true,
                 min: 0,
-                max: 70000000,
+                max: 75000000,
                 stepSize: 5000000,
               },
               scaleLabel: {
