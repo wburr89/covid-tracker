@@ -146,7 +146,7 @@ input[type="text"] {
 }
 
 .flip-card-back p {
-  font-size: 0.9em;
+  font-size: 1em;
   margin-bottom: 3px;
 }
 
@@ -170,8 +170,10 @@ footer .row {
   margin-bottom: 0 !important;
 }
 
+
 .vaccine-header {
-  background: url("https://cdn.pixabay.com/photo/2020/03/16/16/29/virus-4937553__480.jpg")
+  /* background: url("https://cdn.pixabay.com/photo/2020/03/16/16/29/virus-4937553__480.jpg") */
+  background: url('https://www.labnetinternational.com/sites/www.labnetinternational.com/files/blogsies/header-images/COVID-19_banner.jpg')
     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -209,7 +211,7 @@ background-color: #a94e8b14
 
 /* Covid Care */
 .care-header {
-  background: url("/img/careheader.jpg")
+  background: url('https://images.unsplash.com/photo-1585904529540-db52ff70f4c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80')
     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
