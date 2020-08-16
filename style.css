@@ -208,7 +208,7 @@ background-color: #a94e8b14
 
 /* Covid Care */
 .care-header {
-  background: url("https://cdn.pixabay.com/photo/2020/03/16/16/29/virus-4937553__480.jpg")
+  background: url("/img/careheader.jpg")
     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

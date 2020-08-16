@@ -230,6 +230,7 @@ fetch("https://disease.sh/v3/covid-19/countries/usa")
       },
       options: {
         maintainAspectRatio: false,
+        zoomAnimation: true,
         scales: {
           yAxes: [
             {
