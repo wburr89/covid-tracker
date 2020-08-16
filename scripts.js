@@ -159,9 +159,9 @@ fetch("https://disease.sh/v3/covid-19/countries/usa")
     <div class="flip-card-inner">
       <div class="flip-card-front">
         <h3>Total recovered</h3>
-        <p>${data.recovered.toLocaleString("en")}</p>
+        <p class="font-weight-normal">${data.recovered.toLocaleString("en")}</p>
         <h3>Recovered today</h3>
-        <p>${data.todayRecovered.toLocaleString("en")}</p>
+        <p class="font-weight-normal">${data.todayRecovered.toLocaleString("en")}</p>
       </div>
       <div class="flip-card-back">
         <p><strong>Recovered per million:</strong> ${data.recoveredPerOneMillion.toLocaleString(
