@@ -1,4 +1,3 @@
-
 // Get vaccine data
 fetch("https://disease.sh/v3/covid-19/vaccine")
   .then((response) => response.json())
@@ -15,10 +14,9 @@ fetch("https://disease.sh/v3/covid-19/vaccine")
     // main data for cards
     let vacDiv = document.querySelector("#vaccine-data");
 
-
-
-    vacDiv.innerHTML = mainData.map(
-      (element, index) => `
+    vacDiv.innerHTML = mainData
+      .map(
+        (element, index) => `
       
         <div id="accordion">
           <div class="card block mb-3">
@@ -42,7 +40,8 @@ fetch("https://disease.sh/v3/covid-19/vaccine")
           </div>
           </div>
         </div>`
-    ).join('');
+      )
+      .join("");
   });
 
 $(document).ready(function () {
@@ -64,4 +63,3 @@ $(document).ready(function () {
     $(this).remove();
   });
 });
-
