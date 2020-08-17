@@ -33,11 +33,11 @@ h3 {
   text-align: center;
   margin-top: 15px;
   margin-bottom: -30px;
-  font-size: 0.8em;
+  font-size: 1.2em;
 }
 
 .header span {
-  font-size: 0.5em;
+  font-size: 0.8em;
   text-align: center;
   margin-top: 30px;
   margin-bottom: -25px;
@@ -179,7 +179,7 @@ footer .row {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 250px !important;
+  height: 300px !important;
   -webkit-box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.14);
   -moz-box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.14);
   box-shadow: 3px 3px 8px 2px rgba(0,0,0,0.3);
@@ -217,7 +217,7 @@ background-color: #a94e8b14
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 250px !important;
+  height: 300px !important;
   -webkit-box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.14);
   -moz-box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.14);
   box-shadow: 3px 3px 8px 2px rgba(0,0,0,0.3);
@@ -227,3 +227,9 @@ section p {
   font-size: .6em !important;
   line-height: 1.4;
 }
+
+.care-li li {
+  font-size: 1.2em;
+  padding: .4em;
+}
+
