@@ -233,3 +233,8 @@ section p {
   padding: .4em;
 }
 
+img {
+  -webkit-box-shadow: 0px 7px 14px -8px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 7px 14px -8px rgba(0,0,0,1);
+  box-shadow: 0px 7px 14px -8px rgba(0,0,0,1);
+}
