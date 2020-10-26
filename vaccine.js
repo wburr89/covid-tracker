@@ -28,7 +28,7 @@ fetch("https://disease.sh/v3/covid-19/vaccine")
               </h5>
             </div>
 
-            <div id="z${index}" class="collapse"  data-parent="#accordion">
+            <div id="${index}" class="collapse"  data-parent="#accordion">
               <div class="card-body">
                 <p class="text-muted text-left"><strong>Funded by:</strong> ${element.funding[0]}</p>
                 <p class="mb-none text-muted text-left"><strong>Institution:</strong> ${element.institutions[0]}</p>
